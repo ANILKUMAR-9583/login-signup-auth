@@ -8,7 +8,7 @@ const Dashboard = () => {
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem('user'));
     setUser(storedUser);
-  }, []);
+  }, [category]);
 
   const handleSignOut = () => {
     localStorage.removeItem('user');
